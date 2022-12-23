@@ -62,6 +62,7 @@ body {
 	border: 1px solid var(--color-red);
 	color: var(--color-white);
 	outline: none;
+	transition: 0.9s;
 }
 
 #campo-script-copiar div{
