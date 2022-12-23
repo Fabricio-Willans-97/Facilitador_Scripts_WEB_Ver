@@ -17,17 +17,10 @@ $(document).ready(function(){
 
 /******************** | Script para copiar conteuo | ********************/
 function CopyToClipboard(containerid) {
-	if (document.selection) {
-		var range = document.body.createTextRange();
-		range.moveToElementText(document.getElementById(containerid));
-		range.select().createTextRange();
-		document.execCommand("copy");
-  	} 
-  	else if (window.getSelection) {
-		var range = document.createRange();
-		range.selectNode(document.getElementById(containerid));
-		window.getSelection().addRange(range);
-		document.execCommand("copy");
-		alert("Script copiado para área de transferência.")
-  	}
-}
+	var copyDiv = document.getElementById(containerid);
+	copyDiv.style.display = 'block';
+	copyDiv.focus();
+	document.execCommand('SelectAll');
+	document.execCommand("Copy", false, null);
+	window.alert("Script copiado para área de transferência.");
+ }
