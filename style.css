@@ -1,0 +1,110 @@
+:root{
+	--color-white: #fff;
+	--color-dark1: #181818;
+	--color-dark2: #1e1e1e;
+	--color-purple1: #9333FF;
+	--color-purple2: indigo;
+	--color-red: #EF2828;
+	--color-red2: #ff00dda4;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: var(--color-dark1);
+	color: var(--color-white);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 150px 5px;
+}
+
+#container {
+	background-color: var(--color-dark2);
+	padding: 3rem;
+	border-radius: 10px;
+	width: 600px;
+	overflow: auto;
+}
+
+.conteudo-titulo, .conteudo-subtitulo {
+	text-align: center;
+	padding-bottom: 1rem;
+}
+
+.conteudo-subtitulo {
+	color: var(--color-red);
+}
+
+#container #campo-scripts{
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+#caixa-script {
+	display: flex;
+	justify-content: center;	
+}
+
+#campo-script-copiar {
+	overflow: auto;
+	width: 100%;
+	height: 250px;
+	margin: 10px;
+	padding: 1em;
+	font-size: 12px;
+	background-color: var(--color-dark1);
+	border: 1px solid var(--color-red);
+	color: var(--color-white);
+	outline: none;
+}
+
+#campo-script-copiar div{
+	display: none;
+}
+
+#campo-script-copiar:hover {
+	border: 1px solid var(--color-red2);
+	transition: 0.9s;
+	outline: none;
+}
+
+select {
+	border-radius: 6px;
+	padding: 2px;
+}
+
+
+#botao {
+	display: flex;
+	padding: 5px;
+	justify-content: center;
+	align-items: center;
+}
+
+button{
+	padding: 7px;
+	width: 7rem;
+	font-size: 1rem;
+	border: none;
+	border-radius: 6px;
+	background-color: var(--color-purple1);
+	color: var(--color-white);
+	cursor: pointer;
+	transition: .3s;
+}
+
+button:hover {
+	background-color: var(--color-purple2);
+}
+
+/* RESPONSIVIDADE, Ainda em desenvolvimento*/
+
+@media screen and (max-width: 650px) {
+
+}

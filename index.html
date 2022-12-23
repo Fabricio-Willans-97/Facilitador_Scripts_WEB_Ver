@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="pt-BR">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Facilitador de Scripts</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="jquery-3.6.1.js"></script>
+	<script src="scripts.js"></script>
+</head>
+
+<body>
+
+	<div id="container">		
+
+		<header class="conteudo-titulo">
+			<h1>Facilitador de Scripts WEB</h1>
+		</header>
+			
+		<header class="conteudo-subtitulo">
+			<h3>Facilitador Kyndryl (Vers 1.0)</h3>
+		</header>
+
+		<div id="campo-scripts">
+
+		<!-------------------- Seletores p/ copiar-------------------->
+			<div>
+				<label>SCRIPT</label> <br>
+				<select id="select" name="select">
+					<option value="" selected>Selecione seu Script ...</option>
+					<option value="script1">Primeiro contato</option>
+					<option value="script2">Encerramento de chamado</option>
+					<option value="script3">Tentativa de contato</option>
+					<option value="script4">Encerramento sem intervenção técnica</option>
+					<option value="script5">Direcionamento Microcity</option>
+					<option value="script6">Encerramento por tentativas de contato excedidas</option>
+					<option value="script7">Agendamento</option>
+					<option value="script8">Script para repassar a operadora de internet</option>
+					<option value="script9">Pendente de fornecedor</option>
+					<option value="script10">Encerramento chamados de Telefonia</option>
+					<option value="script11">Solicitação de aparelho negada</option>
+					<option value="script12">Como conectar VLI-Visitante</option>
+					<option value="script13">Reset Senha Jabber</option>
+					<option value="script14">Termo de Aceite</option>
+					<option value="script15">Endereço IP no CMD</option>
+					<option value="script16">Desbloqueio de Usuário SAP</option>
+					<option value="script17">Filas de Encaminhamento no Service Now</option>
+					<option value="script18">Senhas Diversas</option>
+					<option value="script19">Filas Impressoras</option>
+					<option value="script20">Ligação pelo Cisco Jabber</option>
+					<option value="script21">Comandos Frequentes</option>
+				</select>
+			</div> <br>
+
+			<label>Scripts para copiar:</label>
+
+			<!-------------------- Scripts pronto -------------------->
+			<div id="caixa-script">
+				<div id="campo-script-copiar" contenteditable>
+					
+					<div class="script1 box">
+						Olá XXXXX, tudo bem? <br> <br>
+						Sou o analista designado para atender o seu chamado XXXXX, sobre XXXXX. Você está disponível nesse momento?
+					</div>
+
+					<div class="script2 box">
+						Sintoma: <br>
+						Causa Raiz: <br>
+						Ação Corretiva: <br> <br>
+						Sempre que precisar de algum atendimento, estarei à disposição!
+					</div>
+
+					<div class="script3 box">
+						1a Tentativa de contato para atendimento <br>
+						------------------------------------------------------------------ <br>
+						Prezado(a) XXXXXXXXXXX. <br> <br>
+
+						Tentamos contato referente ao chamado XXXXXXX, porém, não obtivemos sucesso. <br>
+						Descritivo da(s) tentativa(s) de contato: <br>
+						- Teams - DD/MM/AAAA hr:min <br>
+						- Telefone DDD 9XXXX-XXXX - DD/MM/AAAA hr:min <br> <br>
+
+						Retornaremos o contato por mais duas vezes (em dias e horários diferentes), e caso não tenhamos sucesso novamente, seu chamado será encerrado por tentativas de contato excedidas. <br>
+					</div>
+
+					<div class="script4 box">
+						Encerramento de chamado XXXXXXXXX, sem intervenção técnica. <br>
+						Após contato com o colaborador(a), fomos informados que o problema já estava normalizado.
+					</div>
+
+					<div class="script5 box">
+						Nome do solicitante: <br>
+						Contato do solicitante: <br>
+						Local de atendimento: <br>
+						Fabricante: <br>
+						Modelo: <br>
+						Service Tag: <br>
+						Problema identificado: <br>
+						Testes realizados: <br>
+						Diagnostico Dell realizado? Qual o erro?
+					</div>
+
+					<div class="script6 box">
+						Prezado(a) XXXXXXXXX. Como não obtivemos retorno nas tentativas de contato para atendimento do seu chamado de n°: XXXXXXXXX, estamos encerrando-o. Gentileza abrir um novo chamado caso o problema persista e/ou quando estiver disponível para atendimento.
+					</div>
+
+					<div class="script7 box">
+						Prezado(a) XXXX, <br>
+						Conforme sua solicitação, seu chamado foi agendado para dia XXXX às XXXX.
+					</div>
+
+					<div class="script8 box">
+						Pode informar isso para operadora: <br> <br>
+
+						Para me conectar à VPN IPSEC da minha empresa necessito da liberação nas portas e protocolos abaixo: <br> <br>
+						Porta UDP/ 500 <br>
+						Porta UDP/ 4500 <br>
+						Endereço de Destino: pps.vli - logistica.com.br
+					</div>
+
+					<div class="script9 box">
+						Prezado(a) XXXXXXXXX, <br>
+						Seu chamado XXXXXXX está pendente de atuação do fornecedor XXXXXXXX, referente a ação XXXXXXXXXX. <br>
+						Previsão de retorno/solução: XX / XX / XXXX
+					</div>
+
+					<div class="script10 box">
+						Localidade: <br>
+						Tipo de telefonia: ____ Fixo ____ Móvel <br>
+						Imei Aparelho(Móvel): <br>
+						Marca e Modelo Aparelho: <br>
+						Número da linha: <br>
+						Imei CHIP(móvel): <br>
+						MAC Aparelho(fixo): <br>
+						Causa Raiz: <br>
+						Ação Corretiva: <br>
+						Testes efetuados: Usuário(a) validou ______ com sucesso! <br>
+						OBSERVAÇÃO:
+					</div>
+
+					<div class="script11 box">
+						Caro(a) colaborador(a), XXXXXXXXXXXXXXX, <br>
+						Informamos que as requisições de novos aparelho coorporativos estão suspensas pela diretoria de TI. <br>
+						Podemos fornecer apenas a linha, caso seja do seu interesse precisamos que seja aberto um novo chamado, solicitando uma nova linha.
+					</div>
+
+					<div class="script12 box">
+						1 - Se conectar, na rede VLI VISITANTE - ( pelo aparelho móvel do usuário : celular) <br>
+						2 - No navegador, vai aparecer um formulário para ser preenchido, com os dados do visitante inclusive email. A senha de conexão ( ele irá receber, no email que preencheu o formulário). <br>
+						3- é somente se acessar a rede VLI Visitante , e colocar o email = usuário, e a senha que recebeu em seu email.
+					</div>
+
+					<div class="script13 box">
+						Na barra de endereço digitar : https://10.1.117.20/ucmuser/ <br>
+						Configurações Gerais > Senha do cliente Portal(insira a nova senha).
+					</div>
+
+					<div class="script14 box">
+						Após gerar o termo no Service Now, passar o seguinte ao usuário: <br> <br>
+
+						Ok, eu já gerei o termo pelo Service Now, basta você assinar pra mim através do link: https://vli.service-now.com/vli?id=index <br>
+						Do lado esquerdo da tela abaixo de Abrir uma solicitação tem Termo de Aceite - Devolução de Equipamento. Clique ali e na página que abrir, do lado direito tem um botão azul escrito ASSINAR, basta clicar e desenhar uma assinatura no quadradinho e clicar em Enviar Assinatura.
+					</div>
+
+					<div class="script15 box">
+						Você vai clicar na lupa ao lado do iniciar e vai digitar CMD, vai abrir o prompt de comando. Ele tem uma tela preta, nele você vai digitar ipconfig e dar enter, vai aparecer uma série de informações. Eu preciso de uma sequência de números que começa ou com 172. ou com 10. que está descrita na frente de Endereço IPV4.
+					</div>
+
+					<div class="script16 box">
+						https://fiori.vli-logistica.com.br/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html#AccessRequest-ZVLI_REQ_UNLOCK
+					</div>
+
+					<div class="script17 box">
+						TELEFONIA ------------------------------- SUPORTE TELECOM - NIVEL 2 <br>
+						JABBER---------------------------------- SUPORTE TELECOM -NIVEL 1 <br>
+						BASE DE EQUIPAMENTO-------------------- - IBM - GESTAO DE ATIVOS <br>
+						BLUETOOTH / PORTAS / SEP / VPN / POLITICAS------ SEGURANÇA DA INFORMACAO N1 <br>
+						ORACLE FUSION ---------------------------OCR N2* <br>
+						HOMOLOGAÇÃO DE SOFTWARE -----------------HOMOLOGACAO DE SOFTWARE <br>
+						ACESSO AO ANALYSIS---------------------- ANALYSIS* <br>
+						USUARIO / EMAIL-------------------------- - SUPORTE HOSTING <br>
+						CONEXAO / REDE---------------------------- POD SERVICE REDES <br>
+						SMARTPHONE / CELULAR---------------------- SUPORTE TELEFONIA MOVEL - NIVEL 2 <br>
+						CRACHA / ONGUARD / LENEL-------------------- LENEL <br>
+						SUPORTE LOCAL IBM -----------------------IBM - Field Services Percall <br>
+						SUPORTE REMOTO IBM---------------------- IBM - Field Services Remoto <br>
+						SUPORTE IMPRESSORA ----------------------OUTSOURCING - IMPRESSÃO <br>
+						SIACON---------------------------------- SIACON - N3 * <br>
+						MICROCITY / COTAÇÃO-------------------- - OUTSOURCING - PCAAS <br>
+						LICENÇAS / CENTRO DE CUSTO ----------------EUC SUPPORT - LICENCIAMENTO <br>
+						PASTAS PUBLICO---------------------------ACCESS CONTROL TEAM(*) <br>
+						SAP-------------------------------------- XX - N1 - DISP <br>
+						PORTAL DA UNIVERSIDADE--------------------PORTAL DA UNIVERSIDADE N1
+					</div>
+
+					<div class="script18 box">
+						BIOS Microcity - VL!Bel0Horizont3@. | VL!Bel0Horizont3@ <br>
+						BIOS VLI - $Sec@b10%$ ou $Sec@b10$% <br> <br>
+						
+						SENHA IMAGEM: localadmin.vli ou Administrador ou .dministrador - #@dmin1oc@10719 <br> <br>
+
+						ADMINISTRADOR MICROCITY - sx$%bigwwL@9IF1KWnyY /localadmin.vli <br>
+						ADMINISTRADOR TIVIT     - %m@io1oc@1% <br> <br>
+
+						Outras senhas: p4t@R!U2 | #259$VL1tR3m# | $365#lOg1s4$ | L!og1cFois | Verysilent | verysilent
+					</div>
+
+					<div class="script19 box">
+						\VLIARGMF001      \172.21.210.137        Araguari <br>
+						\VLIBCQMF001      \172.24.13.69          Barra de Coqueiros <br>
+						\VLIBHZMF001      \172.21.246.14         Belo horizonte <br>
+						\VLIGUAMF001      \172.26.99.201         Guará <br>
+						\VLIPLTMF001      \172.26.87.8           Palmeirante <br>
+						\VLIPRPMF001      \172.26.122.237        Pirapora <br>
+						\VLIPTNMF001      \172.26.19.8           Porto Nacional <br>
+						\VLISLZMF001      \172.20.193.13         São luiz <br>
+						\VLITPMMF001      \172.29.229.137        Tiplam <br>
+						\VLITVTMF001      \10.1.113.143          São Paulo(Tivit) <br>
+						\VLIUBAMF001      \172.21.53.8           Uberaba(MG)
+					</div>
+
+					<div class="script20 box">
+						Como utilizar o Cisco Jabber para ligação: <br> <br>
+						0 015 xx 9 xxx-xxxxx numero celular ddd; <br>
+						0 021 xx xxxx-xxxx - fixo ddd; <br>
+						0 9 xxx - xxxxx - celular local; <br>
+						0 xxxx - xxxx - fixo local.
+					</div>
+
+					<div class="script21 box">
+						Comandos mais usados através do CMD: <br> <br>
+
+						Atualizar Políticas: gpupdate /force <br> <br>
+
+						Verificar usuário no AD: net user /domain MATRICULA <br> <br>
+
+						Serial do equipamento: wmic bios get serialnumber <br> <br>
+
+						Hostname do equipamento: hostname <br> <br>
+
+						Informações do sistema: systeminfo <br> <br>
+
+						Ultimo usuário logado no equipamento: wmic /node:HOSTNAME computersystem get username
+					</div>
+
+				</div>
+			</div>
+			<!-------------------- Botão copiador-------------------->
+			<div id="botao">
+				<button onclick="CopyToClipboard('caixa-script')">COPIAR</button>
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+
+</html>
