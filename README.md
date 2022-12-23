@@ -1,5 +1,4 @@
 # Facilitador-de-Scripts-Ver-WEB
-Facilitador de Scripts Web Version
 
 Facilitador de Scripts para Tecnicos de Suporte em TI
 Desenvolvido em HTML, CSS e JavaScript (JQuery)
