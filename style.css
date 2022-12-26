@@ -4,6 +4,7 @@
 	--color-dark2: #1e1e1e;
 	--color-purple1: #9333FF;
 	--color-purple2: indigo;
+	--color-grey: grey;
 	--color-red: #EF2828;
 	--color-red2: #ff00dda4;
 }
@@ -95,7 +96,7 @@ select {
 }
 
 .script17.box table td {
-  border-bottom: 1px solid var(--color-purple2);
+  border-bottom: 1px solid var(--color-grey);
 }
 
 button{
