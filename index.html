@@ -19,14 +19,28 @@
 		</header>
 			
 		<header class="conteudo-subtitulo">
-			<h3>Facilitador Kyndryl (Vers 1.0)</h3>
+			<h3>Facilitador Kyndryl (Vers 2.1)</h3>
 		</header>
 
 		<div id="campo-scripts">
 
 		<!-------------------- Seletores p/ copiar-------------------->
 			<div>
-				<label>SCRIPT</label> <br>
+				<label>SITES:</label>
+					<input id="collapsible" class="toggle" type="checkbox">
+					<label for="collapsible" class="lbl-toggle">Selecione o site ...</label>
+						<div class="collapsible-content">
+					  		<div class="content-inner">
+					    		<a href="https://vli.service-now.com" target="_blank">ServiceNow</a> <br>
+					    		<a href="http://vliazuas028.vlinet.local/HelpDesk/KeyRecoveryPage.aspx" target="_blank">Bitlocker</a> <br>
+					    		<a href="https://easyinventory.microcity.com.br/pages/login" target="_blank">SGM</a> <br>
+					    		<a href="https://www.dell.com/support/home/pt-br" target="_blank">Dell Suporte</a> <br>
+					    		<a href="https://www.office.com/?auth=2" target="_blank">Portal Office</a> <br>
+					    		<a href="https://universidade.vli-logistica.com.br/" target="_blank">Portal da Universidade VLI</a>
+					    	</div>
+						</div> <br> <br>
+
+				<label>SCRIPT:</label> <br>
 				<select id="select" name="select">
 					<option style="display: none;" selected>Selecione seu Script ...</option>
 					<option value="script1">Primeiro contato</option>
@@ -114,10 +128,11 @@
 					<div class="script8 box">
 						Pode informar isso para operadora: <br> <br>
 
-						Para me conectar à VPN IPSEC da minha empresa necessito da liberação nas portas e protocolos abaixo: <br> <br>
-						Porta UDP/ 500 <br>
-						Porta UDP/ 4500 <br>
-						Endereço de Destino: pps.vli - logistica.com.br
+						"Para me conectar à VPN IPSEC da minha empresa necessito da liberação nas portas e protocolos abaixo: <br> <br>
+						- Porta UDP/500 <br>
+						- Porta UDP/4500 <br>
+						- Endereço de Destino: pps.vli-logistica.com.br <br> <br>
+						Esse pedido visa atender uma demanda de acesso aos sistemas da minha empresa, tendo em vista que estou trabalhando de casa."
 					</div>
 
 					<div class="script9 box">
@@ -158,11 +173,11 @@
 					</div>
 
 					<div class="script14 box">
-						Após gerar o termo no Service Now, passar o seguinte ao usuário: <br> <br>
+						Necessito que você assine o termo de aceite para prosseguimos com o processo de (aquisição/devolução/remanejamento) de equipamento. <br> <br>
 
-						Ok, eu já gerei o termo pelo Service Now, basta você assinar pra mim através do link: https://vli.service-now.com/vli?id=index <br>
-						Do lado esquerdo da tela abaixo de Abrir uma solicitação tem Termo de Aceite - Devolução de Equipamento. 
-						Clique ali e na página que abrir, do lado direito tem um botão azul escrito ASSINAR, basta clicar e desenhar uma assinatura no quadradinho e clicar em Enviar Assinatura.
+						Para assinar basta acessar o link: https://vli.service-now.com/vli <br> <br>
+
+						Ao acessar o link basta procurar no canto esquerdo da tela o chamado informado xxxxxxx e seguir com o processo de assinatura digital do termo na página que abrir, do lado direito tem um botão azul escrito ASSINAR, basta clicar e desenhar uma assinatura no quadradinho e clicar em "Enviar Assinatura".
 					</div>
 
 					<div class="script15 box">
@@ -175,60 +190,50 @@
 					</div>
 
 					<div class="script17 box">
-						TELEFONIA ------------------------------- SUPORTE TELECOM - NIVEL 2 <br>
-						JABBER---------------------------------- SUPORTE TELECOM -NIVEL 1 <br>
-						BASE DE EQUIPAMENTO-------------------- - IBM - GESTAO DE ATIVOS <br>
-						BLUETOOTH / PORTAS / SEP / VPN / POLITICAS------ SEGURANÇA DA INFORMACAO N1 <br>
-						ORACLE FUSION ---------------------------OCR N2* <br>
-						HOMOLOGAÇÃO DE SOFTWARE -----------------HOMOLOGACAO DE SOFTWARE <br>
-						ACESSO AO ANALYSIS---------------------- ANALYSIS* <br>
-						USUARIO / EMAIL-------------------------- - SUPORTE HOSTING <br>
-						CONEXAO / REDE---------------------------- POD SERVICE REDES <br>
-						SMARTPHONE / CELULAR---------------------- SUPORTE TELEFONIA MOVEL - NIVEL 2 <br>
-						CRACHA / ONGUARD / LENEL-------------------- LENEL <br>
-						SUPORTE LOCAL IBM -----------------------IBM - Field Services Percall <br>
-						SUPORTE REMOTO IBM---------------------- IBM - Field Services Remoto <br>
-						SUPORTE IMPRESSORA ----------------------OUTSOURCING - IMPRESSÃO <br>
-						SIACON---------------------------------- SIACON - N3 * <br>
-						MICROCITY / COTAÇÃO-------------------- - OUTSOURCING - PCAAS <br>
-						LICENÇAS / CENTRO DE CUSTO ----------------EUC SUPPORT - LICENCIAMENTO <br>
-						PASTAS PUBLICO---------------------------ACCESS CONTROL TEAM(*) <br>
-						SAP-------------------------------------- XX - N1 - DISP <br>
-						PORTAL DA UNIVERSIDADE--------------------PORTAL DA UNIVERSIDADE N1
+						<table>
+							<tr><td>TELEFONIA</td>										<td>SUPORTE TELECOM - NIVEL 2</td></tr>
+							<tr><td>JABBER</td>											<td>SUPORTE TELECOM - NIVEL 1</td></tr>
+							<tr><td>BASE DE EQUIPAMENTO</td>							<td>IBM - GESTAO DE ATIVOS</td></tr>
+							<tr><td>BLUETOOTH / PORTAS / SEP / VPN / POLITICAS</td>		<td>SEGURANÇA DA INFORMACAO N1</td></tr>
+							<tr><td>ORACLE FUSION</td>									<td>OCR N2*</td></tr>
+							<tr><td>HOMOLOGAÇÃO DE SOFTWARE</td>						<td>HOMOLOGACAO DE SOFTWARE</td></tr>
+							<tr><td>ACESSO AO ANALYSIS</td>								<td>ANALYSIS*</td></tr>
+							<tr><td>USUARIO / EMAIL</td>								<td>SUPORTE HOSTING</td></tr>
+							<tr><td>CONEXAO / REDE</td>									<td>POD SERVICE REDES</td></tr>
+							<tr><td>SMARTPHONE / CELULAR</td>							<td>SUPORTE TELEFONIA MOVEL - NIVEL 2</td></tr>
+							<tr><td>CRACHA / ONGUARD / LENEL</td>						<td>LENEL</td></tr>
+							<tr><td>SUPORTE LOCAL IBM</td>								<td>IBM - Field Services Percall</td></tr>
+							<tr><td>SUPORTE REMOTO IBM</td>								<td>IBM - Field Services Remoto</td></tr>
+							<tr><td>SUPORTE IMPRESSORA</td>								<td>OUTSOURCING - IMPRESSÃO</td></tr>
+							<tr><td>SIACON</td>											<td>SIACON - N3*</td></tr>
+							<tr><td>MICROCITY / COTAÇÃO</td>							<td>OUTSOURCING - PCAAS</td></tr>
+							<tr><td>LICENÇAS / CENTRO DE CUSTO</td>						<td>EUC SUPPORT - LICENCIAMENTO</td></tr>
+							<tr><td>PASTAS PUBLICO</td>									<td>ACCESS CONTROL TEAM(*)</td></tr>
+							<tr><td>SAP</td>											<td>XX - N1 - DISP</td></tr>
+							<tr><td>PORTAL DA UNIVERSIDADE</td>							<td>PORTAL DA UNIVERSIDADE N1</td></tr>
+						</table>
 					</div>
 
 					<div class="script18 box">
-						BIOS Microcity - VL!Bel0Horizont3@. | VL!Bel0Horizont3@ <br>
-						BIOS VLI - $Sec@b10%$ ou $Sec@b10$% <br> <br>
-						
-						SENHA IMAGEM: localadmin.vli ou Administrador ou .dministrador - #@dmin1oc@10719 <br> <br>
-
-						ADMINISTRADOR MICROCITY - sx$%bigwwL@9IF1KWnyY /localadmin.vli <br>
-						ADMINISTRADOR TIVIT     - %m@io1oc@1% <br> <br>
-
-						Outras senhas: p4t@R!U2 | #259$VL1tR3m# | $365#lOg1s4$ | L!og1cFois | Verysilent | verysilent
+						Devido a politica de Segurança da Informação da empresa, as senhas foram desabilitadas para visualização pública.
+						Favor, buscar no repositório local da empresa.
 					</div>
 
 					<div class="script19 box">
-						\VLIARGMF001      \172.21.210.137        Araguari <br>
-						\VLIBCQMF001      \172.24.13.69          Barra de Coqueiros <br>
-						\VLIBHZMF001      \172.21.246.14         Belo horizonte <br>
-						\VLIGUAMF001      \172.26.99.201         Guará <br>
-						\VLIPLTMF001      \172.26.87.8           Palmeirante <br>
-						\VLIPRPMF001      \172.26.122.237        Pirapora <br>
-						\VLIPTNMF001      \172.26.19.8           Porto Nacional <br>
-						\VLISLZMF001      \172.20.193.13         São luiz <br>
-						\VLITPMMF001      \172.29.229.137        Tiplam <br>
-						\VLITVTMF001      \10.1.113.143          São Paulo(Tivit) <br>
-						\VLIUBAMF001      \172.21.53.8           Uberaba(MG)
+						Devido politica de Segurança da Informação da empresa, os IP's das impressoras não devem ser mostrados ao público.<br> <br>
+
+						Favor, entrar no link abaixo para verificar as filas de impressão: <br> <br>
+
+						<a href="https://vli.service-now.com/vli?sys_kb_id=e04068fadb338050c423ad2414961943&id=kb_article_view&sysparm_rank=3&sysparm_tsqueryId=44435bb41bc0a95003e485dde54bcbef" target="_blank" contenteditable="false">Impressoras - Servidores \ Filas de Impressão por Localidades</a>
+						
 					</div>
 
 					<div class="script20 box">
 						Como utilizar o Cisco Jabber para ligação: <br> <br>
-						0 015 xx 9 xxx-xxxxx numero celular ddd; <br>
-						0 021 xx xxxx-xxxx - fixo ddd; <br>
-						0 9 xxx - xxxxx - celular local; <br>
-						0 xxxx - xxxx - fixo local.
+						0 015 + (DDD) + (9 XXXX-XXXX) --> Para celular externo; <br>
+						0 021 + (DDD) + (XXXX-XXXX) --> Para telefone fixo externo; <br>
+						0 + (9 XXXX-XXXX) --> Para celular local, sem o DDD; <br>
+						0 + (XXXX-XXXX) --> Para telefone fixo local, sem o DDD.
 					</div>
 
 					<div class="script21 box">
