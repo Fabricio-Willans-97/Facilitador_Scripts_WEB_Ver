@@ -7,4 +7,9 @@ Função básica selecionar script e copiar com botão.
 
 ***Reupado devido correção de script que impedia a cópia do conteudo que ficava oculto e aparecia após selecionado.
 
-![facilitador scripts web](https://user-images.githubusercontent.com/113811396/209261488-46bdf88f-2358-4a11-8738-3791caf06113.JPG)
+Logs:
+- (Jun/22) inicio do projeto, estrutura pronta, porem devido a problema de script e falta de conhecimento necessária o projeto foi removido.
+- (Dez/22) Projeto reupado devido correção de script que impedia a cópia do conteudo que ficava oculto e aparecia após selecionado.
+- (Dez/22) Projeto atualizado para 2.1, adicionado links de suporte e adicionado responsividade.
+
+![facilitador scripts](https://user-images.githubusercontent.com/113811396/209562912-76ed09f5-8cae-42d0-a490-c3510399d85a.jpg)
