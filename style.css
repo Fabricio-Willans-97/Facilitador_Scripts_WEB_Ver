@@ -77,15 +77,25 @@ body {
 
 select {
 	border-radius: 6px;
-	padding: 2px;
+	padding: 3px;
+	width: 320px;
+	outline: none;
 }
 
+.script17.box table {
+	width: 100%;
+	border-spacing: 0px;
+}
 
 #botao {
 	display: flex;
 	padding: 5px;
 	justify-content: center;
 	align-items: center;
+}
+
+.script17.box table td {
+  border-bottom: 1px solid var(--color-purple2);
 }
 
 button{
@@ -104,8 +114,64 @@ button:hover {
 	background-color: var(--color-purple2);
 }
 
-/* RESPONSIVIDADE, Ainda em desenvolvimento*/
+input[type='checkbox'] {
+	display: none;
+}
+
+.lbl-toggle {
+	display: block;
+	width: 310px;
+	padding: 4px;
+	font-size: 13px;
+	color: var(--color-dark1);
+	background: var(--color-white);
+	cursor: pointer;
+	border-radius: 7px;
+	transition: all 0.25s ease-out;
+	border: 1px solid var(--color-dark1);
+}
+
+.collapsible-content {
+	max-height: 0px; 
+	overflow: hidden;
+	transition: max-height .25s ease-in-out;
+}
+.toggle:checked + .lbl-toggle + .collapsible-content {
+	max-height: 350px;
+}
+
+.collapsible-content .content-inner {
+	background: var(--color-dark1);
+	border-radius: 7px;
+	padding: 7px 15px;
+	width: 288px;
+	border: 1px solid var(--color-dark1);
+	border-top: none;
+}
+
+.content-inner a {
+	text-decoration: none;
+	color: var(--color-white);
+}
+
+a:visited {
+	color: var(--color-white);
+}
+
+a:hover {
+	color: var(--color-red);
+}
+
+/* RESPONSIVIDADE*/
 
 @media screen and (max-width: 650px) {
 
+	body {
+		background-color: var(--color-dark2);
+		margin: 50px 5px;
+	}
+
+	#campo-script-copiar {
+		height: 150px;
+	}
 }
