@@ -49,7 +49,7 @@
 					<option value="script4">Encerramento sem intervenção técnica</option>
 					<option value="script5">Direcionamento Microcity</option>
 					<option value="script6">Encerramento por tentativas de contato excedidas</option>
-					<option value="script7">Agendamento</option>
+					<option value="script7" onclick = agendAtend()>Agendamento</option>
 					<option value="script8">Script para repassar a operadora de internet</option>
 					<option value="script9">Pendente de fornecedor</option>
 					<option value="script10">Encerramento chamados de Telefonia</option>
@@ -92,9 +92,11 @@
 
 						Tentamos contato referente ao chamado XXXXXXX, porém, não obtivemos sucesso. <br>
 						Descritivo da(s) tentativa(s) de contato: <br>
-						- Teams - DD/MM/AAAA hr:min <br>
-						- Telefone DDD 9XXXX-XXXX - DD/MM/AAAA hr:min <br> <br>
-
+						<script language = javascript type="text/javascript">
+							now = new Date
+								document.write (`- Teams - ${now.getDate()}/${now.getMonth()}/${now.getFullYear()} - ${now.getHours()}:${(now.getMinutes()<10?'0':'') + now.getMinutes()} <br>`);
+								document.write (`- Telefone (XX) 9XXXX-XXXX - ${now.getDate()}/${now.getMonth()}/${now.getFullYear()} - ${now.getHours()}:${(now.getMinutes()<10?'0':'') + now.getMinutes()} <br> <br>`);
+						</script>
 						Retornaremos o contato por mais duas vezes (em dias e horários diferentes), e caso não tenhamos sucesso novamente, seu chamado será encerrado por tentativas de contato excedidas.
 					</div>
 
@@ -120,9 +122,27 @@
 						Gentileza abrir um novo chamado caso o problema persista e/ou quando estiver disponível para atendimento.
 					</div>
 
-					<div class="script7 box">
-						Prezado(a) XXXX, <br>
-						Conforme sua solicitação, seu chamado foi agendado para dia XXXX às XXXX.
+					<div class="script7 box" id="logAgend">
+						<script language = javascript type="text/javascript">
+							function agendAtend(){
+								var nomeUser = window.prompt("Nome do(a) colaborador(a)");
+								var dataUser = window.prompt("Data para agendamento");
+								var horUser = window.prompt("Horario do agendamento");
+								if (nomeUser == null || nomeUser == "") {
+									document.getElementById('logAgend').innerHTML = `Prezado(a) XXXX, <br> Conforme sua solicitação, seu chamado foi agendado para o dia ${dataUser} às ${horUser}.`;
+								}
+								else if (dataUser == null || dataUser == "") {
+									document.getElementById('logAgend').innerHTML = `Prezado(a) ${nomeUser}, <br> Conforme sua solicitação, seu chamado foi agendado para o dia XXXX às ${horUser}.`;
+								}
+								else if (horUser == null || horUser == "") {
+									document.getElementById('logAgend').innerHTML = `Prezado(a) ${nomeUser}, <br> Conforme sua solicitação, seu chamado foi agendado para o dia ${dataUser} às XXXX.`;
+								}
+								else {
+									document.getElementById('logAgend').innerHTML = `Prezado(a) ${nomeUser}, <br> Conforme sua solicitação, seu chamado foi agendado para o dia ${dataUser} às ${horUser}.`;
+								}
+							}
+						</script>
+
 					</div>
 
 					<div class="script8 box">
