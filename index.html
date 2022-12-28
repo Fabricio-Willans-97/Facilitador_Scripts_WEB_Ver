@@ -122,27 +122,9 @@
 						Gentileza abrir um novo chamado caso o problema persista e/ou quando estiver disponível para atendimento.
 					</div>
 
-					<div class="script7 box" id="logAgend">
-						<script language = javascript type="text/javascript">
-							function agendAtend(){
-								var nomeUser = window.prompt("Nome do(a) colaborador(a)");
-								var dataUser = window.prompt("Data para agendamento");
-								var horUser = window.prompt("Horario do agendamento");
-								if (nomeUser == null || nomeUser == "") {
-									document.getElementById('logAgend').innerHTML = `Prezado(a) XXXX, <br> Conforme sua solicitação, seu chamado foi agendado para o dia ${dataUser} às ${horUser}.`;
-								}
-								else if (dataUser == null || dataUser == "") {
-									document.getElementById('logAgend').innerHTML = `Prezado(a) ${nomeUser}, <br> Conforme sua solicitação, seu chamado foi agendado para o dia XXXX às ${horUser}.`;
-								}
-								else if (horUser == null || horUser == "") {
-									document.getElementById('logAgend').innerHTML = `Prezado(a) ${nomeUser}, <br> Conforme sua solicitação, seu chamado foi agendado para o dia ${dataUser} às XXXX.`;
-								}
-								else {
-									document.getElementById('logAgend').innerHTML = `Prezado(a) ${nomeUser}, <br> Conforme sua solicitação, seu chamado foi agendado para o dia ${dataUser} às ${horUser}.`;
-								}
-							}
-						</script>
-
+					<div class="script7 box">
+						Prezado(a) XXXX, <br>
+						Conforme sua solicitação, seu chamado foi agendado para dia XX/XX/XX às XX:XX.
 					</div>
 
 					<div class="script8 box">
