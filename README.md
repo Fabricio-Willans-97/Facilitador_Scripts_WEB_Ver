@@ -12,5 +12,8 @@ Logs:
 - (Dez/22) Projeto reupado devido correção de script que impedia a cópia do conteudo que ficava oculto e aparecia após selecionado.
 - (Dez/22) Projeto atualizado para 2.1, adicionado links de suporte e adicionado responsividade.
 - (Dez/22) Adicionado função de puxar a data e hora atual ao selecionar o script de "tentativa de contato com usuario". Função de "prompt" removida devido problema com Google Ghrome e Edge, futuramente será atualizada.
+- (Jan/23) Prrojeto atualizado para 2.3, adicionado página para Scripts pronto de oferta de chamado referente a Salas de Reunião.
 
 <img style="width: 700px;" src="https://user-images.githubusercontent.com/113811396/209737066-a84106a5-18cf-4bb6-a732-504c10e5c39f.JPG"/>
+
+<img style="width: 700px;" src= "https://user-images.githubusercontent.com/113811396/213317928-b4e912db-24bf-4a80-9ad9-0169729bb2ad.JPG"/>
