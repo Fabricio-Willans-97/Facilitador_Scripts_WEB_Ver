@@ -15,4 +15,5 @@ Logs:
 - (Jan/23) Prrojeto atualizado para 2.3, adicionado página para Scripts pronto de oferta de chamado referente a Salas de Reunião.
 
 <img style="width: 700px;" src="https://user-images.githubusercontent.com/113811396/209737066-a84106a5-18cf-4bb6-a732-504c10e5c39f.JPG"/>
-![facilitador checklist salas reuniao](https://user-images.githubusercontent.com/113811396/213317928-b4e912db-24bf-4a80-9ad9-0169729bb2ad.JPG)
+
+<img style="width: 700px;" src= "https://user-images.githubusercontent.com/113811396/213317928-b4e912db-24bf-4a80-9ad9-0169729bb2ad.JPG"/>
