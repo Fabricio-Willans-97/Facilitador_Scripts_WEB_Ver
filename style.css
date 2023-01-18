@@ -4,9 +4,10 @@
 	--color-dark2: #1e1e1e;
 	--color-purple1: #9333FF;
 	--color-purple2: indigo;
+	--color-purple3: #ff00dda4;
 	--color-grey: grey;
 	--color-red: #EF2828;
-	--color-red2: #ff00dda4;
+	--color-red2: #ff6a6a;
 }
 
 * {
@@ -41,18 +42,32 @@ body {
 	color: var(--color-red);
 }
 
+.conteudo-subtitulo#conteudo-subtitulo-page2 {
+	color: var(--color-white);
+}
+
+.conteudo-titulo a {
+	text-decoration: none;
+}
+
 #container #campo-scripts{
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
 }
 
-#caixa-script {
+.caixa-script {
 	display: flex;
 	justify-content: center;	
 }
 
-#campo-script-copiar {
+.caixa-script#caixa-script-page2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.campo-script-copiar {
 	overflow: auto;
 	width: 100%;
 	height: 250px;
@@ -66,11 +81,27 @@ body {
 	transition: 0.9s;
 }
 
-#campo-script-copiar div{
+.campo-script-copiar#campo-script-copiar-page2 {
+	overflow: auto;
+	width: 49%;
+	height: 120px;
+	margin: 0px;
+	margin-right: 5px;
+	padding: 1em;
+	font-size: 12px;
+}
+
+.campo-script-copiar div{
 	display: none;
 }
 
-#campo-script-copiar:hover {
+.campo-script-copiar:hover {
+	border: 1px solid var(--color-purple3);
+	transition: 0.9s;
+	outline: none;
+}
+
+.campo-script-copiar#campo-script-copiar-page2:hover {
 	border: 1px solid var(--color-red2);
 	transition: 0.9s;
 	outline: none;
@@ -88,11 +119,15 @@ select {
 	border-spacing: 0px;
 }
 
-#botao {
+.botao {
 	display: flex;
 	padding: 5px;
 	justify-content: center;
 	align-items: center;
+}
+
+.botao#botao-page2 {
+	display: inline;
 }
 
 .script17.box table td {
@@ -111,8 +146,19 @@ button{
 	transition: .3s;
 }
 
+.botao#botao-page2 button {
+	padding: 6px;
+	font-size: 12px;
+	background-color: var(--color-red);
+	color: var(--color-white);
+}
+
 button:hover {
 	background-color: var(--color-purple2);
+}
+
+.botao#botao-page2 button:hover {
+	background-color: var(--color-red2);
 }
 
 input[type='checkbox'] {
@@ -163,6 +209,25 @@ a:hover {
 	color: var(--color-red);
 }
 
+.rodape-page2 {
+	margin-top: 60px;
+	font-size: 13px;
+}
+
+.rodape-page2 a {
+	text-decoration: none;
+	color: var(--color-red);
+}
+
+.rodape-page2 a:visited {
+	text-decoration: none;
+	color: var(--color-red);
+}
+
+.rodape-page2 a:hover {
+	color: var(--color-red2);
+}
+
 /* RESPONSIVIDADE*/
 
 @media screen and (max-width: 650px) {
@@ -172,7 +237,27 @@ a:hover {
 		margin: 50px 5px;
 	}
 
-	#campo-script-copiar {
+	.campo-script-copiar {
 		height: 150px;
 	}
+
+	.caixa-script#caixa-script-page2 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.campo-script-copiar#campo-script-copiar-page2 {
+		overflow: auto;
+		width: 80%;
+		margin: 0px;
+	}
+
+	.botao#botao-page2 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
 }

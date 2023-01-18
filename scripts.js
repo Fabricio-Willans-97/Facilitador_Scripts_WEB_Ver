@@ -24,3 +24,13 @@ function CopyToClipboard(containerid) {
 	document.execCommand("Copy", false, null);
 	window.alert("Script copiado para área de transferência.");
  }
+
+ /******************** | Script para copiar conteuo referente a checklist | ********************/
+ function copyToClipboard() {
+    var copyText = document.getElementById("content").value;
+    navigator.clipboard.writeText(copyText).then(() => {
+        // Alert the user that the action took place. XD
+        // Nobody likes hidden stuff being done under the hood! :D
+        alert("Script copiado para área de transferência");
+    });
+  }

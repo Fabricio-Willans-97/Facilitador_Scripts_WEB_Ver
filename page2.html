@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="pt-BR">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Checklist Salas Reunião</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="jquery-3.6.1.js"></script>
+	<script src="scripts.js"></script>
+</head>
+
+<body>
+
+	<div id="container">		
+
+		<header class="conteudo-titulo">
+			<a href="page2.html"><h1>CHECKLIST SALAS DE REUNIÃO</h1></a>
+		</header>
+			
+		<header class="conteudo-subtitulo" id="conteudo-subtitulo-page2">
+			<h3>SEDE VLI - BELO HORIZONTE - MG</h3>
+		</header>
+
+		<div id="campo-scripts">
+
+		<!-------------------- Seletores p/ copiar-------------------->
+			<div>
+				<label>SITES:</label>
+					<input id="collapsible" class="toggle" type="checkbox">
+					<label for="collapsible" class="lbl-toggle">Selecione o site ...</label>
+						<div class="collapsible-content">
+					  		<div class="content-inner">
+					    		<a href="https://vli.service-now.com" target="_blank">ServiceNow - Página Inicial</a> <br>
+					    		<a href="https://vli.service-now.com/vli?id=sc_cat_item&sys_id=f34d94721b352050f6240fe1f54bcb03" target="_blank">Salas de Videoconferência</a> <br>
+								<a href="index.html">Facilitador de Scripts WEB</a>
+					    	</div>
+						</div> <br>
+						
+				<div style="margin-bottom: 10px; margin-top: 10px;"><h4>SCRIPT P/ ABERTURA DE CHAMADO</h4></div>
+				<label>Salas de reunião:</label> <br>
+
+				<div>
+					<select id="content">
+						<option style="display: none;" selected>Selecione a sala ...</option>
+						<option value="Gentileza realizar o checklist da sala: Videoconferência, no hall do 7º andar na sede VLI em Belo Horizonte - MG.">Videoconferência</option>
+						<option value="Gentileza realizar o checklist da sala: Condomínio, 7º andar, Ala A, na sede VLI em Belo Horizonte - MG.">Condomínio</option>
+						<option value="Gentileza realizar o checklist da sala: Diretoria, 7º andar, Ala B, na sede VLI em Belo Horizonte - MG.">Diretoria</option>
+						<option value="Gentileza realizar o checklist da sala: Montes Claros, no  6º andar, na sede VLI em Belo Horizonte - MG.">Montes Claros</option>
+						<option value="Gentileza realizar o checklist da sala: Pedro Leopoldo, no  6º andar, na sede VLI em Belo Horizonte - MG.">Pedro Leopoldo</option>
+						<option value="Gentileza realizar o checklist da sala: Sala Luís, no  6º andar, na sede VLI em Belo Horizonte - MG.">Sala Luís</option>
+						<option value="Gentileza realizar o checklist da sala: Pirapora, no  6º andar, na sede VLI em Belo Horizonte - MG.">Pirapora</option>
+						<option value="Gentileza realizar o checklist da sala: Alagoinhas, no  6º andar, na sede VLI em Belo Horizonte - MG.">Alagoinhas</option>
+						<option value="Gentileza realizar o checklist da sala: São João Del Rei, no  6º andar, na sede VLI em Belo Horizonte - MG.">São João Del Rei</option>
+						<option value="Gentileza realizar o checklist da sala: Divinópolis, no  6º andar, na sede VLI em Belo Horizonte - MG.">Divinópolis</option>
+						<option value="Gentileza realizar o checklist da sala: TIPLAM, no  6º andar, na sede VLI em Belo Horizonte - MG.">TIPLAM</option>
+						<option value="Gentileza realizar o checklist da sala: Integração, no  6º andar, na sede VLI em Belo Horizonte - MG.">Integração</option>
+						<option value="Gentileza realizar o checklist da sala: Araguari, no  6º andar, na sede VLI em Belo Horizonte - MG.">Araguari</option>
+						<option value="Gentileza realizar o checklist da sala: Paulinia, no  6º andar, na sede VLI em Belo Horizonte - MG.">Paulinia</option>
+						<option value="Gentileza realizar o checklist da sala: Tiradentes, no  6º andar, na sede VLI em Belo Horizonte - MG.">Tiradentes</option>
+					</select>
+
+					<div class="botao" id="botao-page2"><button onclick="copyToClipboard()">Copiar Script</button></div>
+				</div>
+
+
+			</div>
+
+			<!-------------------- Script p/ encerramento de chamado -------------------->
+			<div style="margin-top: 20px;"><h4>SCRIPT P/ ENCERRAMENTO DE CHAMADO</h4></div>
+			<div class="caixa-script" id="caixa-script-page2">
+				<div class="campo-script-copiar" id="campo-script-copiar-page2" contenteditable>	
+					<p>
+						Checklist realizado com sucesso: <br>
+						Funções testadas: <br>
+						Vídeo <br>
+						Áudio <br>
+						Conexão <br>
+						Apresentação de conteúdo <br>
+						Problema Identificado: 
+					</p>
+				</div>
+			
+				<!-------------------- Botão copiador-------------------->
+				<div class="botao" id="botao-page2">
+					<button onclick="CopyToClipboard('campo-script-copiar-page2')">Copiar Script</button>
+				</div>
+			</div>
+
+		</div>
+		<div class="rodape-page2">
+			Demais duvidas de como realizar o procedimento de checklist nas salas de reunião, acessar o KB0011335 na Base de Conhecimento, ou através do link abaixo: <br> <br>
+			<a target="_blank" href="https://vli.service-now.com/vli?sys_kb_id=49dccdd21bf95d90ae6ea6cae54bcb08&id=kb_article_view&sysparm_rank=1&sysparm_tsqueryId=22f7d71c1bac259031d7eca0f54bcbe8">BASE DE CONHECIMENTO - CHECKLIST DAS SALAS DE REUNIÃO</a>
+		</div>
+
+	</div>
+
+</body>
+
+</html>

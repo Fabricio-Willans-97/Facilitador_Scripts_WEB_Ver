@@ -15,11 +15,11 @@
 	<div id="container">		
 
 		<header class="conteudo-titulo">
-			<h1>Facilitador de Scripts WEB</h1>
+			<a href="index.html"><h1>Facilitador de Scripts WEB</h1></a>
 		</header>
 			
 		<header class="conteudo-subtitulo">
-			<h3>Facilitador Kyndryl (Vers 2.2)</h3>
+			<h3>Facilitador Kyndryl (Vers 2.3)</h3>
 		</header>
 
 		<div id="campo-scripts">
@@ -36,7 +36,8 @@
 					    		<a href="https://easyinventory.microcity.com.br/pages/login" target="_blank">SGM</a> <br>
 					    		<a href="https://www.dell.com/support/home/pt-br" target="_blank">Dell Suporte</a> <br>
 					    		<a href="https://www.office.com/?auth=2" target="_blank">Portal Office</a> <br>
-					    		<a href="https://universidade.vli-logistica.com.br/" target="_blank">Portal da Universidade VLI</a>
+					    		<a href="https://universidade.vli-logistica.com.br/" target="_blank">Portal da Universidade VLI</a> <br>
+								<a href="page2.html">Checklist das salas de reunião</a>
 					    	</div>
 						</div> <br> <br>
 
@@ -64,14 +65,15 @@
 					<option value="script19">Filas Impressoras</option>
 					<option value="script20">Ligação pelo Cisco Jabber</option>
 					<option value="script21">Comandos Frequentes</option>
+					<option value="script22">Encerramento de Cadastro de crachá p/ impressão</option>
 				</select>
 			</div> <br>
 
 			<label>Scripts para copiar:</label>
 
 			<!-------------------- Scripts pronto -------------------->
-			<div id="caixa-script">
-				<div id="campo-script-copiar" contenteditable>
+			<div class="caixa-script">
+				<div class="campo-script-copiar" id="scripts" contenteditable>
 					
 					<div class="script1 box">
 						Olá XXXXX, tudo bem? <br> <br>
@@ -253,12 +255,24 @@
 
 						Ultimo usuário logado no equipamento: wmic /node:HOSTNAME computersystem get username
 					</div>
+					
+					<div class="script22 box">
+						Sintoma: Impressora funcionando normalmente, <br>
+						Crachá não estava cadastrado para impressão, foi incluso o numero XXXX informado pelo usuário. <br> <br>
+						
+						Solicitação: Usuário(a) XXXX, de matricula: XXXX, solicita permissão de impressão para o seu crachá nº XXXX. <br> <br>
+
+						Solução: Permissão de impressão concedida para o crachá: XXXX. <br> <br>
+
+						Obs.: A replicação com a permissão de imprimir ocorrerá em até 24 horas. Aguardando confirmação da funcionalidade da impressão para o chamado ser encerrado.
+
+					</div>
 
 				</div>
 			</div>
 			<!-------------------- Botão copiador-------------------->
-			<div id="botao">
-				<button onclick="CopyToClipboard('campo-script-copiar')">COPIAR</button>
+			<div class="botao">
+				<button onclick="CopyToClipboard('scripts')">COPIAR</button>
 			</div>
 
 		</div>
