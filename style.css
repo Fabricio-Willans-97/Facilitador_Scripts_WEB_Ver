@@ -48,6 +48,12 @@ body {
 
 .conteudo-titulo a {
 	text-decoration: none;
+	color: var(--color-white); 
+}
+
+.conteudo-titulo a:visited {
+	text-decoration: none;
+	color: var(--color-white); 
 }
 
 #container #campo-scripts{
