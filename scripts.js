@@ -22,7 +22,10 @@ function CopyToClipboard(containerid) {
 	copyDiv.focus();
 	document.execCommand('SelectAll');
 	document.execCommand("Copy", false, null);
-	window.alert("Script copiado para área de transferência.");
+	var alertarTexto = document.getElementById('alert-texto')
+	alertarTexto.innerHTML = ('Script copiado para área de transferência');
+	alertarTexto.className = "show";
+  	setTimeout(function(){ alertarTexto.className = alertarTexto.className.replace("show", ""); }, 3000);
  }
 
  /******************** | Script para copiar conteuo referente a checklist | ********************/
