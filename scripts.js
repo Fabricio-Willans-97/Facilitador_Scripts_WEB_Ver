@@ -15,7 +15,7 @@ $(document).ready(function(){
 });
 
 
-/******************** | Script para copiar conteuo | ********************/
+/******************** | Script para copiar conteudo | ********************/
 function CopyToClipboard(containerid) {
 	var copyDiv = document.getElementById(containerid);
 	copyDiv.style.display = 'block';
@@ -25,15 +25,16 @@ function CopyToClipboard(containerid) {
 	var alertarTexto = document.getElementById('alert-texto')
 	alertarTexto.innerHTML = ('Script copiado para área de transferência');
 	alertarTexto.className = "show";
-  	setTimeout(function(){ alertarTexto.className = alertarTexto.className.replace("show", ""); }, 3000);
+  	setTimeout(function(){ alertarTexto.className = alertarTexto.className.replace("show", ""); }, 1000);
  }
 
- /******************** | Script para copiar conteuo referente a checklist | ********************/
+ /******************** | Script para copiar conteudo referente a checklist | ********************/
  function copyToClipboard() {
     var copyText = document.getElementById("content").value;
     navigator.clipboard.writeText(copyText).then(() => {
-        // Alert the user that the action took place. XD
-        // Nobody likes hidden stuff being done under the hood! :D
-        alert("Script copiado para área de transferência");
+	var alertarTexto = document.getElementById('alert-texto')
+	alertarTexto.innerHTML = ('Script copiado para área de transferência');
+	alertarTexto.className = "show";
+	setTimeout(function(){ alertarTexto.className = alertarTexto.className.replace("show", ""); }, 1000);
     });
   }
